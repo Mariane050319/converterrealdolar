@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+
+<body>
+    <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+    <label for="toggle" class="toggle-label"></label>
+
+        <h1>Converter Real Para Dólar</h1>
+  
+       
+        <script type="text/javascript">
+            var dolares = 0;
+            
+            function conversor(){
+                //acessar o que foi digitado
+                var reais = document.getElementById('reais').value;
+                
+                //converter de string para float
+                reais = parseFloat(reais);
+                
+                //converter para dolares
+                dolares = reais / 2.4;
+                
+                console.log(dolares);
+                
+                alert(dolares + " dolares");
+            }
+        </script>
+<form>
+    <fieldset>
+        <label>Reais</label>
+        <input type="text" id="reais" />			
+        <input type="submit"  onclick="conversor()" />
+    </fieldset>
+</form>
+   <script src="main.js">
+
+   </script>
+
+   <footer>Desenvolvido por Mariane da Silva | &copy;</footer>
+</body>
+</html>
